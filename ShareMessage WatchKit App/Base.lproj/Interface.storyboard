@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ShareMessage_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="118" alignment="left" text="Label" id="nij-8S-wkR"/>
+                        <button width="1" alignment="left" title="顯示" id="BHH-mx-h6h">
+                            <connections>
+                                <action selector="receiveMessage" destination="AgC-eL-Hgc" id="cZ7-wH-oq6"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="message" destination="nij-8S-wkR" id="7fd-lV-um6"/>
+                        <outlet property="receiveBtn" destination="BHH-mx-h6h" id="B8L-rN-92W"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
